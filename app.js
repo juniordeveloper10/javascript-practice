@@ -1,4 +1,4 @@
-// javascript basicaaly dynamic data types
+// javascript basically dynamic data types
 // learning typesof 
 
 var x;
