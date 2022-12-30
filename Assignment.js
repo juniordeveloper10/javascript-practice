@@ -1,4 +1,4 @@
-
+// Q1 
 /*
 Write a javascript function named is_integer
 which checks if the passed argument is an integer. 
@@ -127,3 +127,18 @@ You can use any mathematical operator or functions defined in the Math object.
 // const CalculateAreaOfACircle = radius => Math.round(Pi* (radius ** 2));
 // console.log(Pi) // 3.141592653589793
 // console.log(CalculateAreaOfACircle(4)) //  50
+
+// Q2
+/*
+Using the forEach function defined for an array, 
+find the sum of the array of numbers. [function add_all(arr) {...}]
+*/
+
+function add_all(arr1)
+{
+    var arr1 = [12,2,3,4];
+    arr1.forEach(item => {
+    console.log(item);
+    });
+}
+add_all();
