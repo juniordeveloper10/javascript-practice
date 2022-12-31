@@ -151,17 +151,36 @@ to and from celsius, fahrenheit.
 [ Use the formula : c/5 = (f-32)/9, where c = temperature in celsius and f = temperature in fahrenheit]
 */
 
-function temperature(celsius) {
-  let fahrenheit = celsius * 9 / 5 + 32;
-  let message = celsius + '\xB0C is ' + fahrenheit + ' \xB0F .';
-  console.log(message);
-}
-temperature(45);
+// function temperature(celsius) {
+//   let fahrenheit = celsius * 9 / 5 + 32;
+//   let message = celsius + '\xB0C is ' + fahrenheit + ' \xB0F .';
+//   console.log(message);
+// }
+// temperature(45);
 
-function temperature(fahrenheit) {
-    let celsius = (fahrenheit * -32) * 5 / 9;
-    let message = fahrenheit + '\xB0C is ' + celsius + ' \xB0F .';
-    console.log(message);
+// function temperature(fahrenheit) {
+//     let celsius = (fahrenheit * -32) * 5 / 9;
+//     let message = fahrenheit + '\xB0C is ' + celsius + ' \xB0F .';
+//     console.log(message);
+//   }
+//   temperature(45);
+
+// Q4
+
+/*
+Write a factorial function that returns the factorial of a given number, n. 
+Make sure you return the calculated value and not just print it. [function factorial(n){...}]
+*/
+
+function factorial(n)
+{
+  if(n > 0 && n <=1)
+  {
+    return 1;
+  }else
+  {
+    return n * factorial(n-1);
   }
-  temperature(45);
-  
+}
+console.log( factorial(5) ); // 1 * 2 * 3 * 4 *5 ; 
+console.log(factorial(8));  // 1 * 2 * 3 * 4 *5 * 6 * 7 * 8 ;
