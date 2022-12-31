@@ -172,15 +172,48 @@ Write a factorial function that returns the factorial of a given number, n.
 Make sure you return the calculated value and not just print it. [function factorial(n){...}]
 */
 
-function factorial(n)
-{
-  if(n > 0 && n <=1)
-  {
-    return 1;
-  }else
-  {
-    return n * factorial(n-1);
-  }
-}
-console.log( factorial(5) ); // 1 * 2 * 3 * 4 *5 ; 
-console.log(factorial(8));  // 1 * 2 * 3 * 4 *5 * 6 * 7 * 8 ;
+// function factorial(n)
+// {
+//   if(n > 0 && n <=1)
+//   {
+//     return 1;
+//   }else
+//   {
+//     return n * factorial(n-1);
+//   }
+// }
+// console.log( factorial(5) ); // 1 * 2 * 3 * 4 *5 ; 
+// console.log(factorial(8));  // 1 * 2 * 3 * 4 *5 * 6 * 7 * 8 ;
+
+// Q5
+
+/*
+Write a javascript function that converts a given amount of money 
+into coins of denominations (1, 2, 5, 10 and 25). [function convert_to_coins(amount) {...}]. 
+You may choose to print the coin denominations used on the console.
+ E.g. convert_to_coins(87) should print 25 25 25 10 2.
+ */
+
+ function convert_to_coins(amount , coins) 
+ {
+  if (amount === 0) 
+   {
+      return [];
+    } 
+  else
+    {
+      if (amount >= coins[0]) 
+        {
+         left = (amount - coins[0]);
+         return [coins[0]].concat(  convert_to_coins(left, coins) );
+         } 
+       else
+         {
+          coins.shift();
+          return  convert_to_coins(amount, coins);
+         }
+     }
+ } 
+ console.log( convert_to_coins(100, [25, 10, 5, 2,1]));
+
+
