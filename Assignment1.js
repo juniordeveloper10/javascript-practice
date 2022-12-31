@@ -144,3 +144,24 @@ find the sum of the array of numbers. [function add_all(arr) {...}]
 // }
 // add_all([12,34,24,21]);
 
+//Q3  
+
+/* Write a JavaScript program to convert temperatures 
+to and from celsius, fahrenheit.
+[ Use the formula : c/5 = (f-32)/9, where c = temperature in celsius and f = temperature in fahrenheit]
+*/
+
+function temperature(celsius) {
+  let fahrenheit = celsius * 9 / 5 + 32;
+  let message = celsius + '\xB0C is ' + fahrenheit + ' \xB0F .';
+  console.log(message);
+}
+temperature(45);
+
+function temperature(fahrenheit) {
+    let celsius = (fahrenheit * -32) * 5 / 9;
+    let message = fahrenheit + '\xB0C is ' + celsius + ' \xB0F .';
+    console.log(message);
+  }
+  temperature(45);
+  
