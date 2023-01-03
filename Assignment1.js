@@ -70,9 +70,9 @@ You can use any mathematical operator or functions defined in the Math object.
 
 // function is_integer (integer)
 // {
-//     integer = Math.sign(-4.5); // 1
-//     integer = Math.sign(0); // 10
-//     integer = Math.sign(10); // 0
+//     integer = Math.sign(-4.5); // -1
+//     integer = Math.sign(0); // 0
+//     integer = Math.sign(10); // 1
 //     console.log(integer);
 // }
 // is_integer();
@@ -92,9 +92,9 @@ You can use any mathematical operator or functions defined in the Math object.
 
 // function is_integer (integer)
 // {
-//     integer = Math.sqrt(25); // 8
-//     integer = Math.sqrt(9); // 1
-//     integer = Math.sqrt(16); // 1000
+//     integer = Math.sqrt(25); // 5
+//     integer = Math.sqrt(9); // 3
+//     integer = Math.sqrt(16); // 4
 //     console.log(integer);
 // }
 // is_integer();
@@ -103,9 +103,9 @@ You can use any mathematical operator or functions defined in the Math object.
 
 // function is_integer (integer)
 // {
-//     integer = Math.min(2,4,5,6,7); // 
-//     integer = Math.min(12,11,13,15,20); // 
-//     integer = Math.min(20,21,22,23,24); // 
+//     integer = Math.min(2,4,5,6,7); //  2
+//     integer = Math.min(12,11,13,15,20); // 11 
+//     integer = Math.min(20,21,22,23,24); // 20
 //     console.log(integer);
 // }
 // is_integer();
@@ -114,9 +114,9 @@ You can use any mathematical operator or functions defined in the Math object.
 
 // function is_integer (integer)
 // {
-    // integer = Math.max(2,4,5,6,7); // 
-    // integer = Math.max(12,11,13,15,20); // 
-    // integer = Math.max(20,21,22,23,24); // 
+//     integer = Math.max(2,4,5,6,7); // 7
+//     integer = Math.max(12,11,13,15,20); // 20
+//     integer = Math.max(20,21,22,23,24); // 24
 //     console.log(integer);
 // }
 // is_integer();
@@ -194,26 +194,26 @@ You may choose to print the coin denominations used on the console.
  E.g. convert_to_coins(87) should print 25 25 25 10 2.
  */
 
- function convert_to_coins(amount , coins) 
- {
-  if (amount === 0) 
-   {
-      return [];
-    } 
-  else
-    {
-      if (amount >= coins[0]) 
-        {
-         left = (amount - coins[0]);
-         return [coins[0]].concat(  convert_to_coins(left, coins) );
-         } 
-       else
-         {
-          coins.shift();
-          return  convert_to_coins(amount, coins);
-         }
-     }
- } 
- console.log( convert_to_coins(100, [25, 10, 5, 2,1]));
+//  function convert_to_coins(amount , coins) 
+//  {
+//   if (amount === 0) 
+//    {
+//       return [];
+//     } 
+//   else
+//     {
+//       if (amount >= coins[0]) 
+//         {
+//          left = (amount - coins[0]);
+//          return [coins[0]].concat(  convert_to_coins(left, coins) );
+//          } 
+//        else
+//          {
+//           coins.shift();
+//           return  convert_to_coins(amount, coins);
+//          }
+//      }
+//  } 
+//  console.log( convert_to_coins(121, [25, 10, 5, 2,1]));
 
 
