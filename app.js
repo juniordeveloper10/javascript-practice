@@ -78,3 +78,28 @@
 //     console.log(i)
 // }
 
+// Object
+
+// var car = new Object();
+// car.colour = "red";
+// car.model = "gallardo";
+// for(var a in car) 
+// {
+//     console.log(a + " : " + car[a]);
+// }
+// var circle = {};
+// circle.radius = 4;
+// console.log(circle.radius);
+// var book = {title : "The Smart Way To Learn JavaScript" , Author : "Mark Myers"};
+// book.car = {colour : "red" , make : "gallardo" , manunfacture : "lamborghini"};
+// for(var x in book )
+// {
+//     console.log(x);
+// }
+// for(var z in book.car) 
+// {
+//     console.log(z + " : " + book.car[z]);
+// }
+
+// JSON (Javascript object notation);
+
