@@ -103,3 +103,112 @@
 
 // JSON (Javascript object notation);
 
+// var string_of_object = ' {"title": "car", "name": "tesla","price": "$10000" , "model" : "2021"}'
+// musk = JSON.parse(string_of_object);
+// for(var p in musk) 
+// {
+//     console.log(p + " : " + musk[p]);
+// }
+
+
+// Array 
+ /*
+var myArray = [];
+myArray[0] = "zero" ; // sring
+myArray[1] = true ; // bolean
+myArray[2] = 4 ; // num;
+myArray[3] = 12; 
+myArray[4] = myArray[2] * myArray[3];
+myArray[9] = {course : "javascript" , topic : "array"};
+// myArray.length = 2;
+myArray[10] = 11;
+for( var i = 0 ; i < myArray.length ; i++)
+{
+    console.log(myArray[i]);    
+}
+for(var i in myArray)
+{
+    console.log(i)
+}
+console.log(myArray);
+for(var i in myArray)
+{
+    if(myArray.)
+    console.log(i)
+}
+*/
+
+
+// Method In An Array
+// concat / push and  pop (unshift nad shift) / join / slice / splice / sort
+// concat
+/*
+let value1 = [1,2,3,4,5];
+let value2 = [6,7,8,9,10];
+var value3 = ["hello","how you doing"];
+console.log(value1.concat(value2,value3));
+*/
+// join (convert array to string method)
+/*
+let value1 = [1,2,3,4,5];
+let value2 = [6,7,8,9,10];
+var value3 = ["hello","how you doing"];
+var value4 =  value1.concat(value2,value3);
+console.log(value4);
+console.log(value4.join(" | "));
+*/
+//  push unshift (unshift added value first index push added value last index of array)
+/*
+let value1 = [1,2,3,4,5];
+let value2 = [6,7,8,9,10];
+var value3 = ["hello","how you doing"];
+value3.push("JavaScript");
+var value4 =  value1.concat(value2,value3);
+value4.unshift(0);
+console.log(value4);
+*/
+
+// pop shift (shift remove the first index array value pop remove last value index of array)
+
+/*
+let value1 = [1,2,3,4,5];
+let value2 = [6,7,8,9,10];
+var value3 = ["hello","how you doing"];
+value3.pop();
+var value4 =  value1.concat(value2,value3);
+value4.unshift();
+console.log(value4);
+*/
+
+// slice splice
+
+// const value1 = [1,2,3,4,5,6];
+// console.log(value1);
+// var value2 = value1.slice(1);
+// console.log(value2); 
+
+// const value = ["alpha", "beta", "gamma", "delta", "epsilon", "zeta", "eta", "theta", "iota"];
+// value.splice(2,5 ,"rho", "sigma", "tau");
+// console.log(value);
+
+// Sorting Array
+
+// var sortArray = [12,2,3,1,15,55];
+// sortArray.sort();
+// console.log(sortArray);
+// function new_comparator(a,b)
+// {
+//     return a-b;
+// }
+// console.log(sortArray.sort(new_comparator));
+// function new_comparator(a,b)
+// {
+//     return b-a;
+// }
+// console.log(sortArray.sort(new_comparator));
+
+var x = [10,20,30,40,50];
+x.unshift(60);
+x.pop();
+x.push(70);
+console.log(x);
