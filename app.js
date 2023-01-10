@@ -207,8 +207,8 @@ console.log(value4);
 // }
 // console.log(sortArray.sort(new_comparator));
 
-var x = [10,20,30,40,50];
-x.unshift(60);
-x.pop();
-x.push(70);
-console.log(x);
+// var x = [10,20,30,40,50];
+// x.unshift(60);
+// x.pop();
+// x.push(70);
+// console.log(x);
