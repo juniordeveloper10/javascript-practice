@@ -137,13 +137,12 @@ find the sum of the array of numbers. [function add_all(arr) {...}]
 
 // function add_all(arr) {
 //     let sum = 0;
-//     arr.forEach(item => {
-//         sum += item;
-//         console.log(sum);
+//     arr.forEach(function(num) {
+//         sum += num;
 //     });
+//     return sum;
 // }
-// add_all([12,34,24,21]);
-
+// console.log( add_all([12,34,24,21]) );
 //Q3  
 
 /* Write a JavaScript program to convert temperatures 
@@ -215,5 +214,21 @@ You may choose to print the coin denominations used on the console.
 //      }
 //  } 
 //  console.log( convert_to_coins(121, [25, 10, 5, 2,1]));
+//  function _convert_to_coins(amount) {
+//     var denominations = [25, 10, 5, 2, 1];
+//     var result = {};
+//     var remainingAmount = amount;
+  
+//     for(var i = 0; i < denominations.length; i++){
+//         var coin = denominations[i];
+//         if(remainingAmount >= coin){
+//             var count = Math.floor(remainingAmount/coin);
+//             remainingAmount = remainingAmount % coin;
+//             result[coin] = count;
+//         }
+//     }
 
+//     return result;
+// }
 
+// console.log(_convert_to_coins(87));
