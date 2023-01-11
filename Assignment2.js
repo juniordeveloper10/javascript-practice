@@ -27,6 +27,17 @@ Write a javascript function named reverse which takes a string argument and retu
 //    console.log(arr);
 
    
+function length_of_array(arr) {
+   var count = 0;
+    for(var i = 0 ; i < arr.length ; i++)
+    {
+        if(arr[i] !== undefined)
+        {
+            count++;
+        }
+    }
+    return count;
+}
+console.log(length_of_array([1,2,4,5,undefined,7]));
 
-   
 
